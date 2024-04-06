@@ -13,18 +13,21 @@ h1 {
 }
 
 /* Notes Grid */
-.notes-grid {
+.notesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
   gap: 2rem;
+ 
 }
 
-/* Individual Note Card */
-.note-card {
-  background-color: #959191;
+
+.note-panel{
+  background-color: #f4f3f3;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  overflow:scroll;
 }
 
 .note-card h2 {

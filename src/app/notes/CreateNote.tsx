@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import styles from "./createnote.module.css";
 
 export default function CreateNote() {
   const [title, setTitle] = useState('');
@@ -29,7 +30,11 @@ export default function CreateNote() {
   }
 
   return (
-    <form onSubmit={create}>
+    <div>
+
+   
+    <h1>CREATE NOTE</h1>
+    <form className={styles.form} onSubmit={create}>
       <input
         type="text"
         placeholder="Title"
@@ -43,5 +48,6 @@ export default function CreateNote() {
       />
         <button type="submit">Save Note</button> 
     </form>
+    </div>
   );
 }

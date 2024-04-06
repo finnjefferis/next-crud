@@ -13,15 +13,20 @@ const notes = await getNotes();
 
 return (
     <div>
+        <Link href="/">BACK</Link>
        <h1>NOTES</h1>
        <div className="notesGrid"> 
+       <div className="note-panel">
        {notes?.map((note) =>{
-                return <Note className="note-card" key={note.id} note={note} />;
+                return <Note  key={note.id} note={note} />;
             })}
        </div>
-      <div className="createNoteWrapper"> 
+    
+             <div className="createNoteWrapper"> 
         <CreateNote /> 
       </div>
+       </div>
+     
     </div>
  )
  

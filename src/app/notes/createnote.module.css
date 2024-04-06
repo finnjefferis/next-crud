@@ -1,0 +1,12 @@
+/* General Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    gap: 1.5rem;             /* Spacing between elements */
+    padding: 2rem;           /* Add padding around form */
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
