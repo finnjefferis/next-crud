@@ -2,11 +2,11 @@
 
 import { useState } from 'react';
 import styles from "./createnote.module.css";
-
+import { useRouter } from 'next/navigation';
 export default function CreateNote() {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-
+  const router = useRouter();
   const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);
   };
@@ -26,7 +26,7 @@ export default function CreateNote() {
           content,
         })
     });
- 
+ router.refresh()
   }
 
   return (
