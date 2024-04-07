@@ -35,13 +35,13 @@ export default function CreateNote() {
    
     <h1>CREATE NOTE</h1>
     <form className={styles.form} onSubmit={create}>
-      <input
+      <input required
         type="text"
         placeholder="Title"
         value={title}
         onChange={handleTitleChange}
       />
-      <textarea
+      <textarea required
         placeholder="Take a note..."
         value={content}
         onChange={handleContentChange}
